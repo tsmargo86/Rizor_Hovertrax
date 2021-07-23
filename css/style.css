@@ -1,0 +1,1405 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logoBlock {
+  width: 100%;
+  height: 3.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  padding-left: 3.5vw;
+  width: 43%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.logo img {
+  width: 20%;
+}
+
+.menu {
+  width: 57%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-menu {
+  padding-left: 2vw;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-left: 2.8vw;
+}
+
+.toogle-button, #menu-checkbox {
+  display: none;
+}
+
+.main-menu .activeCSS {
+  font-size: 1vw;
+}
+
+.firstLetter {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom-width: 0.1vw;
+  padding-left: 0.8vw;
+  padding-bottom: 0.2vw;
+}
+
+.hoverFirstLetter {
+  border-bottom: 1px solid rgb(0, 27, 210);
+  border-bottom-width: 0.1vw;
+  padding-left: 0.8vw;
+  padding-bottom: 0.2vw;
+}
+
+.headWebsite {
+  margin-top: 3.5vw;
+  width: 100%;
+  height: 47vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aboutWebsite {
+  width: 38.9%;
+  height: 100%;
+  background-image: url('../img/background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nameWebsite {
+  padding-left: 20vw;
+  padding-top: 11.7vw;
+  width: 100%;
+  height: 100%;
+  float: right;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nameWebsite h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 4vw;
+  letter-spacing: 0.33vw;
+}
+
+.headVideo {
+  width: 61.1%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgHead {
+  width: 91%;
+  height: 90%;
+  position: relative;
+}
+
+.blockOfPointer {
+  width: 9%;
+  height: 100%;
+}
+
+.imgHead img {
+  width: 100%;
+  height: 94%;
+}
+
+.version {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.point {
+  background: rgb(0, 0, 0);
+  width: 1vw;
+  height: 1vw;
+  margin: 0 0.5vw 1.2vw 0.5vw;
+}
+
+.properties {
+  font-size: 1vw;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 60%;
+  margin-top: 1vw;
+  line-height: 2vw;
+}
+
+.arrow {
+  margin-top: 2vw;
+  margin-left: 1.5vw;
+  width: 16%;
+}
+
+.arrow img {
+  width: 10%;
+  animation: pulse 2.5s linear infinite;
+}
+
+.arrow {
+    animation-delay: -1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    transform: translate(0,-1.5vw);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+.nameButton {
+  margin-top: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  height: 6vw;
+  margin-left: 2.7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.textBtn {
+  width: 50%;
+  margin-right: -0.5vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 1000;
+  text-transform: uppercase;
+  font-size: 0.8vw;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.pBtn {
+  margin-left: 1vw;
+  width: 100%;
+}
+
+.imgBtn {
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  z-index: 50;
+}
+
+.imgBtn img {
+  width: 120%;
+  height: 100%;
+  transition: all 0.2s ease-out;
+}
+
+.arrowHead1 {
+  margin-right: 2vw;
+  width: 17.5%;
+  height: 100%;
+  z-index: 30;
+}
+
+.arrowHead1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.imgHead::before {
+  content: '';
+  background: url("../img/decor.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -1.2vw;
+  right: 4.2vw;
+}
+
+.container {
+  width: 100%;
+}
+
+.block1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sectionDesign {
+  margin-top: 2.5vw;
+  width: 64%;
+  height: 47vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.videoBlock1 {
+  margin-left: -50vw;
+  width: 60%;
+  height: 100%;
+  content: "";
+  background-image: url("../img/foto2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.videoButton {
+  position: relative;
+  z-index: 20;
+  width: 5.5vw;
+  height: 5.5vw;
+  border-radius: 100%;
+  background-color: rgb(234, 237, 244, 0.835);
+}
+
+.videoButton::before {
+  margin-left: 0.2vw;
+  content: "";
+  background: url("../img/btn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.videoButton:hover {
+  width: 5.7vw;
+  height: 5.7vw;
+  cursor: pointer;
+}
+
+.nameBlock1 {
+  width: 18vw;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 14vw;
+  padding-top: 3.5vw;
+  padding-right: 3vw;
+}
+
+.nameBlock1 h5 {
+  margin-bottom: 4vw;
+  text-transform: uppercase;
+  color: rgb(46, 32, 207);
+  font-weight: bold;
+}
+
+.nameBlock1 h2, .aboutProduct h2, .mode h2 {
+  font-family: 'Rubik Mono One', sans-serif;
+  letter-spacing: 0.2vw;
+  margin-bottom: 1.5vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2vw;
+  letter-spacing: 0.4vw;
+}
+
+.nameBlock1 p {
+  margin-bottom: 1.5vw;
+}
+
+.listBlock1 li, .nameBlock1 p {
+  font-size: 1vw;
+}
+
+.listBlock1 li {
+  margin-bottom: 1.5vw;
+}
+
+.listName {
+  list-style: none;
+}
+
+.listName {
+  list-style-position: outside;
+  margin-left: 2.5vw;
+}
+
+.listName::before {
+  content: " ";
+  background-image: url("../img/forName.png");
+  width: 2.5vw;
+  height: 0.7vw;
+  display: inline-block;
+  background-size: 1.9vw;
+  background-repeat: no-repeat;
+  margin-top: 0.2vw;
+  vertical-align: middle;
+  margin-left: -2.5vw;
+}
+
+.sectionColor {
+  width: 36%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 5vw;
+  position: relative;
+  margin-right: -50vw;
+}
+
+.sectionColor::before {
+  content: '';
+  background: url("../img/decor.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  display: block;
+  width: 100%;
+  height: 66%;
+  position: absolute;
+  top: 6.2vw;
+  right: 4.2vw;
+}
+
+.bgText {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bgBlock1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.boxNumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.bgPoint {
+  display: block;
+  margin-bottom: 2.5vw;
+  margin-right: 0.5vw;
+  width: 2vw;
+  height: 2vw;
+  background-color: rgb(236, 236, 236, 0.5);
+}
+
+.bgText p {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 7.8vw;
+  color: rgb(236, 236, 236, 0.5);
+  letter-spacing: 1.6vw;
+}
+
+.boxNumb p:first-child {
+  margin-top: 7vw;
+}
+
+.product {
+  width: 100%;
+  height: 20%;
+  margin-top: -0.7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  z-index: 20;
+}
+
+.arrowBlock2 {
+  width: 1.5vw;
+  height: 80%;
+  margin-top: 1vw;
+  margin-right: 1.1vw;
+}
+
+.lineShort2 img {
+  width: 65%;
+}
+
+.aboutProduct {
+  width: 47%;
+}
+
+.aboutProduct p, .mode p, .mode ul {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+}
+
+.circleColor {
+  margin-top: 0.7vw;
+  margin-right: -1.7vw;
+  margin-left: 0.5vw;
+  height: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.yellow, .blue, .red, .white, .black {
+  width: 1.25vw;
+  height: 1.25vw;
+  border-radius: 50%;
+}
+
+.yellow:hover, .blue:hover, .red:hover, .white:hover, .black:hover {
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.yellow {
+  background-color: rgb(214, 214, 37);
+}
+
+.blue {
+  background-color: rgb(17, 163, 172);
+}
+
+.red {
+  background-color: rgb(185, 26, 59);
+}
+
+.white {
+  background-color: rgb(214, 214, 214);
+}
+
+.black {
+  background-color: rgb(0, 0, 0);
+}
+
+.line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: -1.3vw;
+}
+
+.line img {
+  height: 2.9vw;
+}
+
+.bord {
+  width: 100%;
+  height: 100%;
+}
+
+.bord img {
+  margin-left: -6vw;
+  margin-top: -1.6vw;
+  width: 145%;
+}
+
+.block2 {
+  width: 100%;
+  height: 47vw;
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionMode {
+  width: 30%;
+  height: 100%;
+  background-image: url('../img/background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mode {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 20vw;
+  margin-top: 7.7vw;
+  z-index: 10;
+}
+
+.mode span {
+  font-weight: bolder;
+  font-size: 1.12vw;
+}
+
+.mode ul {
+  margin-top: 1.6vw;
+  list-style: none;
+}
+
+.mode li {
+  list-style-position: outside;
+  margin-left: 2.5vw;
+  margin-bottom: 1.2vw;
+}
+
+.mode li::before {
+  content: " ";
+  background-image: url("../img/forName.png");
+  width: 2.5vw;
+  height: 0.7vw;
+  display: inline-block;
+  background-size: 1.9vw;
+  background-repeat: no-repeat;
+  margin-top: 0.2vw;
+  vertical-align: middle;
+  margin-left: -2.5vw;
+}
+
+.propertyOfMode {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 4.8vw;
+  margin-left: 20vw;
+}
+
+.speedMode {
+  margin-left: 3vw;
+}
+
+.speedNumber {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 2.8vw;
+  color: rgb(17, 7, 199);
+}
+
+.speedNumber span {
+  font-size: 1.5vw;
+}
+
+.speed p:last-child, .speedMode p:last-child {
+  width: 50%;
+  font-weight: lighter;
+  font-size: 1vw;
+  color: rgb(119, 119, 119);
+}
+
+.blockOfPointer3 {
+  width: 5%;
+  height: 100%;
+  z-index: 20;
+  margin-top: 17.5vw;
+  margin-left: -1vw;
+}
+
+.arrowBlock3 {
+  width: 40%;
+  height: 53%;
+}
+
+.arrowBlock3 img {
+  height: 100%;
+}
+
+.imgBlock3 {
+  width: 55.6%;
+  height: 100%;
+  padding-top: 9vw;
+  margin-right: -60vw;
+}
+
+.imgBlock3 img {
+  width: 100%;
+}
+
+.btn2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 6vw;
+  margin-left: 7.3vw;
+  margin-top: -0.5vw;
+}
+
+.textBtn2 {
+  width: 50%;
+  margin-right: -0.5vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 1000;
+  text-transform: uppercase;
+  font-size: 0.8vw;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.pBtn2 {
+  margin-left: 0.9vw;
+  width: 100%;
+}
+
+.imgBtn2 {
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.imgBtn2 img {
+  width: 130%;
+  height: 100%;
+  transition: all 0.2s ease-out;
+}
+
+main {
+  padding-bottom: 8vw;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 49.5vw;
+  background-image: url("../img/footer.jpg");
+  background-size: cover;
+  background-position: -3vw;
+}
+
+.section1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section2 {
+  width: 100%;
+  height: 1.8vw;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(125, 125, 125);
+  font-size: 0.83vw;
+  font-weight: 200;
+}
+
+.leftPart {
+  color: rgb(238, 238, 238);
+  height: auto;
+  width: 29.4%;
+  padding-left: 20vw;
+  margin-top: 5.8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Roboto', sans-serif;
+}
+
+.leftPart h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1vw;
+  padding-bottom: 2vw;
+}
+
+.footerTextPart1, .footerTextPart2 {
+  font-size: 0.84vw;
+  font-weight: 100;
+  line-height: 1.9;
+}
+
+.footerTextPart1 {
+  padding-top: 3vw;
+  width: 16.3vw;
+  padding-bottom: 2vw;
+}
+
+.footerTextPart2 {
+  width: 14.14vw;
+  height: 5vw;
+}
+
+.footerTextPart1 p span {
+  font-weight: bold;
+  font-size: 1.1vw;
+}
+
+.rightPart {
+  display: none;
+  width: 100%;
+  background-image: url('../img/foto4.jpg');
+  height: 96%;
+  background-size: cover;
+  z-index: 20;
+  -webkit-box-shadow: -4px 8px 8px 0px rgba(34, 60, 80, 0.23);
+  -moz-box-shadow: -4px 8px 8px 0px rgba(34, 60, 80, 0.23);
+  box-shadow: -4px 8px 8px 0px rgba(34, 60, 80, 0.23);
+  overflow: hidden;
+  margin-top: -3.5vw;
+}
+
+.leftPart button {
+  margin-top: 6.3vw;
+  width: 13.3vw;
+  height: 2.6vw;
+  color: rgb(27, 52, 223);
+  text-transform: uppercase;
+  font-size: 0.85vw;
+  letter-spacing: 0.01vw;
+  font-weight: 600;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10vw;
+  border: none;
+  -webkit-box-shadow: 0px 8px 4px -2px rgba(34, 60, 80, 0.28);
+  -moz-box-shadow: 0px 8px 4px -2px rgba(34, 60, 80, 0.28);
+  box-shadow: 0px 8px 4px -2px rgba(34, 60, 80, 0.28);
+  transition: all 0.2s ease-out;
+}
+
+.leftPart button:hover {
+  background: rgb(198, 179, 255, 0.9);
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.bgFotterText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255, 0.55);
+  font-size: 10.8vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  margin-top: 27.2vw;
+  margin-right: 10.8vw;
+  letter-spacing: 1.1vw;
+  line-height: 1;
+}
+
+.square {
+  width: 2.5vw;
+  height: 2.5vw;
+  background: rgb(255, 255, 255, 0.55);
+  display: inline-block;
+}
+
+.imgBtn img:hover, .imgBtn2 img:hover {
+  width: 150%;
+  height: 120%;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.splitBlock {
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.splitText {
+  float: left;
+}
+
+.split-lines {
+
+}
+
+.letter-measure {
+	margin-right:0 !important;
+}
+
+.blank {
+	margin-right: 0.2vw !important;
+	white-space: pre !important;
+}
+
+.splitText>div {
+	float:left;
+  font-size: 0.83vw;
+  font-weight: 100;
+  line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:767px) and (max-width:991px) {
+
+  .main-menu li a, .speed p:last-child, .speedMode p:last-child {
+    font-size: 1.2vw;
+  }
+
+  .main-menu .activeCSS, .properties  {
+    font-size: 1.2vw;
+  }
+
+  .logo img {
+    width: 25%;
+  }
+
+  .textBtn, .textBtn2 {
+    font-size: 0.9vw;
+  }
+
+  .imgBtn img {
+    width: 150%;
+  }
+
+  .imgBtn2 img {
+    width: 160%;
+  }
+
+  .nameBlock1 h2, .aboutProduct h2, .mode h2 {
+    font-size: 2.2vw;
+  }
+
+  .listBlock1 li, .nameBlock1 p, .aboutProduct p, .mode p, .mode ul {
+    font-size: 1.4vw;
+  }
+
+  .speedNumber, .speedNumber {
+    font-size: 3.3vw;
+  }
+
+  .speedNumber span {
+    font-size: 1.5vw;
+  }
+
+  .imgBlock3 {
+    width: 54.6%;
+  }
+
+  .speedMode {
+    margin-left: 0vw;
+  }
+
+  .footerTextPart2 {
+    font-size: 1.1vw;
+    margin-top: 5vw;
+    line-height: 1.6;
+  }
+
+  .footerTextPart1 {
+    font-size: 1.1vw;
+    line-height: 1.6;
+    height: 7vw;
+  }
+
+  .leftPart h4 {
+    padding-bottom: 0;
+  }
+
+  .footerTextPart1 p span {
+    font-weight: bold;
+    font-size: 1.3vw;
+  }
+
+  .leftPart {
+    width: 31%;
+  }
+
+  .leftPart button {
+    width: 14.5vw;
+    font-size: 1vw;
+    margin-top: 5vw;
+  }
+
+  .splitText>div {
+    font-size: 1.2vw;
+  }
+
+
+}
+
+@media screen and (min-width:479px) and (max-width:767px) {
+
+  .nameWebsite {
+    padding-left: 18vw;
+    padding-top: 16vw;
+  }
+
+  .nameButton {
+    margin-right: -1vw;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+  .main-menu li a, .speed p:last-child, .speedMode p:last-child {
+    font-size: 1.5vw;
+  }
+
+  .main-menu .activeCSS, .properties  {
+    font-size: 1.5vw;
+  }
+
+  .logo img {
+    width: 28%;
+  }
+
+  .textBtn, .textBtn2 {
+    display: none;
+  }
+
+  .imgBtn img {
+    width: 130%;
+  }
+
+  .imgBtn2 img {
+    width: 140%;
+    margin-left: 0.8vw;
+    margin-bottom: -4.5vw;
+  }
+
+  .nameBlock1 h2, .aboutProduct h2, .mode h2 {
+    font-size: 2.8vw;
+  }
+
+  .nameBlock1 {
+    width: 30vw;
+    padding-right: 0vw;
+    margin-left: 4.5vw;
+  }
+
+  .listBlock1 li, .nameBlock1 p, .aboutProduct p, .mode p, .mode ul {
+    font-size: 1.8vw;
+  }
+
+  .speedNumber, .speedNumber {
+    font-size: 3.5vw;
+  }
+
+  .speedNumber span {
+    font-size: 1.1vw;
+  }
+
+  .mode span {
+    font-weight: bolder;
+    font-size: 1.7vw;
+  }
+
+  .blockOfPointer3 {
+    margin-top: 7.5vw;
+    margin-left: 0;
+  }
+
+  .mode, .propertyOfMode {
+    width: 70%;
+    margin-top: 2vw;
+    margin-left: 18vw;
+  }
+
+  .arrowBlock3 {
+    height: 49%;
+  }
+
+  .imgBlock3 {
+    width: 54.6%;
+  }
+
+  .speedMode {
+    margin-left: 0vw;
+  }
+
+  .footerTextPart2 {
+    font-size: 1.4vw;
+    line-height: 1.1;
+  }
+
+  .footerTextPart1 {
+    font-size: 1.4vw;
+    line-height: 1.1;
+  }
+
+  .leftPart h4 {
+    padding-bottom: 0;
+    font-size: 1.9vw;
+  }
+
+  .footerTextPart1 p span {
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+
+  .leftPart {
+    width: 31%;
+    padding-left: 18vw;
+    margin-top: 5vw;
+  }
+
+  .leftPart button {
+    width: 16vw;
+    height: 3.3vw;
+    font-size: 1.2vw;
+  }
+
+  .sectionDesign {
+    flex-direction: column;
+  }
+
+  .videoBlock1 {
+    width: 50vw;
+    height: 50vw;
+    margin-left: -98vw;
+    background-position: 60%;
+  }
+
+  .videoButton {
+    margin-left: 4vw;
+  }
+
+  .sectionDesign {
+    height: auto;
+  }
+
+  .nameBlock1 {
+    margin-top: 0;
+  }
+
+  .sectionColor {
+    padding-top: 8vw;
+  }
+
+  .block1 {
+    margin-top: 4vw;
+  }
+
+  .block2 {
+    margin-top: -10vw;
+  }
+
+  main {
+    padding-bottom: 15vw;
+  }
+
+  .bgFotterText {
+    margin-right: 9vw;
+    margin-top: 26.5vw;
+  }
+
+  .letter-measure {
+  	margin-right:0 !important;
+  }
+
+  .blank {
+  	margin-right: 0.2vw !important;
+  	white-space: pre !important;
+  }
+
+  .splitText>div {
+  	float:left;
+    font-size: 1.4vw;
+    font-weight: 100;
+    line-height: 1.1;
+  }
+
+}
+
+
+@media screen and (max-width:479px) {
+
+  .logo {
+    padding-left: 1.8vw;
+    align-items: center;
+  }
+
+  .menu {
+    margin-bottom: 1.75vw;
+  }
+
+  .headWebsite {
+    margin-top: 8vw;
+  }
+
+  .nameWebsite {
+    padding-left: 18vw;
+    padding-top: 16vw;
+  }
+
+  .main-menu li a, .speed p:last-child, .speedMode p:last-child {
+    font-size: 1.8vw;
+  }
+
+  .main-menu .activeCSS, .properties  {
+    font-size: 1.7vw;
+  }
+
+  .properties {
+    line-height: 1.6;
+  }
+
+  .logo img {
+    width: 23%;
+  }
+
+  .logoBlock {
+    height: 7vw;
+  }
+
+  .textBtn, .textBtn2 {
+    display: none;
+  }
+
+  .btn {
+    margin-top: 3vw;
+  }
+
+  .imgBtn img {
+    width: 130%;
+  }
+
+  .imgBtn2 img {
+    width: 140%;
+    margin-left: 0.8vw;
+    margin-bottom: -4.5vw;
+  }
+
+  .nameBlock1 h2, .aboutProduct h2, .mode h2 {
+    font-size: 2.8vw;
+  }
+
+  .nameBlock1 {
+    width: 30vw;
+    padding-right: 0vw;
+    margin-left: 8vw;
+  }
+
+  .listBlock1 li {
+    font-size: 2.2vw;
+  }
+
+   .nameBlock1 p, .aboutProduct p, .mode p, .mode ul {
+     font-size: 2.4vw;
+   }
+
+  .nameBlock1 h5 {
+    font-size: 2.4vw;
+  }
+
+  .speedNumber, .speedNumber {
+    font-size: 3.5vw;
+  }
+
+  .speedNumber span {
+    font-size: 1.1vw;
+  }
+
+  .mode span {
+    font-weight: bolder;
+    font-size: 1.7vw;
+  }
+
+  .blockOfPointer3 {
+    margin-top: 7.5vw;
+    margin-left: 0;
+  }
+
+  .mode, .propertyOfMode {
+    margin-left: 18vw;
+    width: 70%;
+    margin-top: 2vw;
+  }
+
+  .speedMode, .speed {
+    margin-top: 2.5vw;
+  }
+
+  .arrowBlock3 {
+    height: 49%;
+  }
+
+  .imgBlock3 {
+    width: 54.6%;
+    margin-right: 0;
+    padding-top: 4vw;
+  }
+
+  .footerTextPart2 {
+    display: none;
+  }
+
+  .footerTextPart1 {
+    font-size: 1.8vw;
+    line-height: 1.1;
+  }
+
+  .leftPart h4 {
+    padding-bottom: 0;
+    font-size: 2.2vw;
+  }
+
+  .footerTextPart1 p span {
+    font-weight: bold;
+    font-size: 1.9vw;
+  }
+
+  .leftPart {
+    width: 31%;
+    padding-left: 18vw;
+  }
+
+  .leftPart button {
+    width: 16vw;
+    height: 3.5vw;
+    font-size: 1.3vw;
+    margin-top: 2vw;
+  }
+
+  .sectionDesign {
+    flex-direction: column;
+  }
+
+  .videoBlock1 {
+    width: 50vw;
+    height: 50vw;
+    margin-left: 0;
+  }
+
+  .sectionDesign {
+    height: auto;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .nameBlock1 {
+    margin-top: 0;
+    padding-top: 0;
+    padding-right: 1vw;
+    width: 50%;
+  }
+
+  .sectionColor {
+    padding-top: 8vw;
+    margin-right: 0;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .block1 {
+    margin-top: 4vw;
+    flex-direction: column;
+  }
+
+  .product {
+    margin-left: 15vw;
+  }
+
+  .bgBlock1 {
+    width: auto;
+    margin-left: -15vw;
+    margin-top: 5vw;
+  }
+
+  footer {
+    margin-top: 8vw;
+  }
+
+  .bgFotterText {
+    margin-right: 13vw;
+    margin-top: 26.5vw;
+  }
+}

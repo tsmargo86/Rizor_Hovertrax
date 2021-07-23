@@ -1,0 +1,27 @@
+<svg id="Группа_7_копия_4" data-name="Группа 7 копия 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156.219" height="474" viewBox="0 0 156.219 474">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="802.219" y="2394.75" width="1" height="472.75" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#cdcdcd"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="153.219" y="471" width="3" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#cdcdcd"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <image id="Фигура_13" data-name="Фигура 13" width="156" height="1" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAAABCAYAAAArQMfQAAAAJUlEQVQokWM8e/bsHAYGBm0GBgZ2BgaGfwyjYBTQBggwMDBUAAAt+QS9w9UnnAAAAABJRU5ErkJggg=="/>
+  <path id="Фигура_9" data-name="Фигура 9" class="cls-1" d="M802.227,2867.5h1V2394.75h-1V2867.5Z" transform="translate(-648 -2394)"/>
+  <circle id="Фигура_10" data-name="Фигура 10" class="cls-2" cx="154.719" cy="472.5" r="1.5"/>
+</svg>
